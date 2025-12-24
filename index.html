@@ -1,11 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My CI/CD Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Berrouyne DevOps Platform</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Sensei was here !</h1>
-  <p id="msg"></p>
+
+  <div class="container">
+    <header class="header">
+      <h1>🚀 Berrouyne CI/CD Platform</h1>
+      <p>Fully automated with GitHub Actions, Argo CD & Kubernetes</p>
+    </header>
+
+    <section class="card">
+      <h2>Status</h2>
+      <p id="status">Loading...</p>
+    </section>
+
+    <section class="card">
+      <h2>Deployment Info</h2>
+      <ul>
+        <li><strong>Environment:</strong> Production</li>
+        <li><strong>Domain:</strong> app.berrouyne.space</li>
+        <li><strong>Updated:</strong> <span id="updatedAt"></span></li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <p>© 2025 Berrouyne • GitOps CI/CD Demo</p>
+    </footer>
+  </div>
 
   <script src="app.js"></script>
 </body>
